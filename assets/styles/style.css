@@ -760,3 +760,38 @@ input[type="radio"]{
 #contact>section>div>section>p>b{
     padding-bottom: 0;
 }
+
+/*Footer Styles*/
+footer{
+    position: relative;
+    height: 50px;
+    background-color: darkgreen;
+}
+footer>p{
+    color: white;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+footer>a{}
+footer>a>img{
+    width: 40px;
+    aspect-ratio: 1/1;
+    bottom: 5px;
+    right: 5px;
+}
+#shadow-icon{
+    position: absolute;
+}
+#fix-icon{
+    position: fixed;
+    opacity: 50%;
+}
+#fix-icon:hover{
+    opacity: 100%;
+}
