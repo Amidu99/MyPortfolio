@@ -377,3 +377,57 @@ header>nav>a:hover{
     top: 190px;
     background-color: black;
 }
+
+/*Skills Styles*/
+#skills{
+    position: relative;
+    height: 300px;
+    /*height: fit-content;*/
+    /*width: fit-content;*/
+    width: 90vw;
+    left: 5vw;
+    display: inline-block;
+    /*margin-left: 5vw;*/
+}
+#skills>h3{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+#skills>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    background-color: midnightblue;
+    position: absolute;
+    top: 30px;
+    width: fit-content;
+    height: fit-content;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#skills>div>div{
+    position: relative;
+}
+.skill-logo{
+    width: 50px;
+}
+#skills>div>div>b:nth-child(2){
+    color: white;
+    position: absolute;
+    top: 0;
+}
+#skills>div>div>b:nth-child(3){
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.skill-range{
+    width: 200px;
+}
