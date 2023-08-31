@@ -326,3 +326,54 @@ header>nav>a:hover{
     top: 190px;
     background-color: black;
 }
+
+/*Experiences Styles*/
+#experiences{
+    position: absolute;
+    height: 300px;
+    width: 45vw;
+    display: inline-block;
+}
+#experiences>h3{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: auto;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+#experiences>p{
+    position: absolute;
+    margin: 0;
+    color: white;
+}
+#experiences div:nth-child(3) {
+    background-color: red;
+    top: 70px;
+}
+#experiences p:nth-child(4) {
+    left: 260px;
+    top: 50px;
+    background-color: black;
+}
+#experiences div:nth-child(5) {
+    background-color: orangered;
+    top: 150px;
+}
+#experiences p:nth-child(6) {
+    left: 90px;
+    top: 120px;
+    background-color: black;
+}
+#experiences div:nth-child(7) {
+    background-color: darkgreen;
+    top: 230px;
+}
+#experiences p:nth-child(8) {
+    left: 260px;
+    top: 190px;
+    background-color: black;
+}
