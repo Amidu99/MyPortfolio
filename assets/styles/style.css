@@ -254,3 +254,75 @@ header>nav>a:hover{
 #downloadCV>a:hover{
     color: yellow;
 }
+
+/*Education Styles*/
+#education{
+    position: relative;
+    height: 300px;
+    /*width: fit-content;*/
+    width: 45vw;
+    display: inline-block;
+    margin-left: 5vw;
+}
+#education>h3{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: auto;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+.mid-line{
+    height: 300px;
+    width: 3px;
+    background-color: #F1E807;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.dot{
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#education>p{
+    position: absolute;
+    margin: 0;
+    color: white;
+}
+#education div:nth-child(3) {
+    background-color: red;
+    top: 70px;
+}
+#education p:nth-child(4) {
+    left: 50px;
+    top: 50px;
+    background-color: black;
+}
+#education div:nth-child(5) {
+    background-color: orangered;
+    top: 150px;
+}
+#education p:nth-child(6) {
+    left: 260px;
+    top: 120px;
+    background-color: black;
+}
+#education div:nth-child(7) {
+    background-color: darkgreen;
+    top: 220px;
+}
+#education p:nth-child(8) {
+    left: 50px;
+    top: 190px;
+    background-color: black;
+}
