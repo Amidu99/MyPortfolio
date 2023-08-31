@@ -431,3 +431,50 @@ header>nav>a:hover{
 .skill-range{
     width: 200px;
 }
+
+/*Assignments Styles*/
+#assignments{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+#assignments>section{
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: blue;
+}
+#assignments>section>h3{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+#assignments>section>div{
+    position: absolute;
+    width: 90vw;
+    height: 75vh;
+    top: 5vh;
+    background-color: darkgoldenrod;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+#assignments>section>div>button{
+    background-color: darkcyan;
+    border-color: #F1E807;
+    color: yellow;
+}
+#assignments>section>div>button>a{
+    color: #F1E807;
+    text-decoration: none;
+}
