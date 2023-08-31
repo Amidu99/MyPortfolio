@@ -647,3 +647,116 @@ input[type="radio"]{
         width: 100%;
     }
 }
+
+/*Contact Styles*/
+#contact{
+    position: relative;
+    height: calc(80vh - 60px);
+    background: red;
+}
+#contact>section>h3{
+    position: absolute;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}
+#contact>section>h3>span{
+    color: #F1E807;
+}
+#contact>section>p{
+    color: white;
+}
+#open-discuss{
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+#say-hello{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+#contact>section>div{
+    position: absolute;
+    width: 90vw;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+#contact>section>div>form{
+    position: relative;
+    grid-column: 1/3;
+    background: blue;
+    width: 60vw;
+    max-width: 66vw;
+    display: inline-block;
+}
+#client-name{
+    position: absolute;
+    width: 27vw;
+    left: 0;
+}
+#client-email{
+    position: absolute;
+    width: 27vw;
+    right: 0;
+}
+#client-message{
+    position: absolute;
+    box-sizing: border-box;
+    width: 60vw;
+    height: 25vh;
+    top: 7vh;
+    max-width: 60vw;
+    max-height: 35vh;
+    min-width: 60vw;
+    min-height: 20vh;
+}
+#btn-send{
+    position: absolute;
+    bottom: 0;
+}
+#contact>section>div>section{
+    /*position: absolute;*/
+    /*height: 300px;*/
+    /*width: 45vw;*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*width: fit-content;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    /*color: white;*/
+}
+#contact>section>div>section>p{
+    width: fit-content;
+    margin: auto;
+    color: white;
+    padding-bottom: 10px;
+}
+#contact>section>div>section>div{
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+#contact>section>div>section>div>a>img{
+    width: 45px;
+    aspect-ratio: 1/1;
+    filter: grayscale(95%);
+}
+#contact>section>div>section>div>a>img:hover{
+    filter: grayscale(0);
+}
+.contact-head{
+    padding-bottom: 0;
+}
+#contact>section>div>section>p>b{
+    padding-bottom: 0;
+}
