@@ -137,3 +137,120 @@ header>nav>a:hover{
 #home>div>button>a:hover{
     color: yellow;
 }
+
+/*About Me Styles*/
+#about{
+    position: relative;
+    padding-top: 65px;
+    /*height: calc(100vh - 60px);*/
+    background: red;
+}
+#about>article{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: #1E1E1E;
+}
+#about>article>h3{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+    font-size: 24px;
+}
+#about>article>h3>span{
+    color: yellow;
+}
+#about>article>figure{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    margin: 0;
+    width: fit-content;
+    display: inline-block;
+}
+#about>article>p{
+    position: absolute;
+    /*display: inline;*/
+    top: 15%;
+    left: 30%;
+    right: 150px;
+    margin: 0;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+#intro{
+    position: absolute;
+    left: 33%;
+    /*right: 0;*/
+    /*margin: auto;*/
+    top: 50%;
+    width: 700px;
+    height: 140px;
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    background-color: #1E1E1E;
+}
+#intro>div:first-child{
+    /*position: relative;*/
+    /*width: 700px;*/
+    /*height: 170px;*/
+    width: fit-content;
+    height: fit-content;
+    /*bottom: 0;*/
+    background-color: #1E1E1E;
+}
+#intro>div>ul{
+    position: absolute;
+    margin: 0;
+    background-color: #1E1E1E;
+}
+#intro>div>ul>li{
+    position: relative;
+    padding-top: 3px;
+    padding-left: 20px;
+    width: 300px;
+    display: inline-block;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+#intro>div>ul>li>span{
+    position: absolute;
+    color: orangered;
+    right: 0;
+    text-align: right;
+}
+#downloadCV{
+    transition-duration: 0.4s;
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    background: yellow;
+    border-radius: 4px;
+    position: absolute;
+    width: 187px;
+    height: 25px;
+    bottom: 0;
+    right: 0;
+}
+#downloadCV:hover{
+    background: black;
+}
+#downloadCV>a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+}
+#downloadCV>a:hover{
+    color: yellow;
+}
