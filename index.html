@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Amidu Shamika</title>
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/css/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="./assets/assignments/fontawesome/css/all.min.css">
     <meta name="keyword" content="amidu shamika, amidu, shamika, gdse, ijse, kalutara, ijse panadura, matugama,
         amidu's portfolio, amidu shamika's portfolio, portfolio, developer, fullstack developer, software engineer,
         software, backend developer, frontend developer, java, html, javascript, coding, programming,amidushamika,
         amidushamika@gmail">
     <meta name="description" content="Amidu Shamika's Portfolio">
     <meta name="author" content="Amidu Shamika">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header id="header">
-    <img
-        src="../assets/images/logo.png"
-        title="AMIDU SHAMIKA"
-        alt="logo"
-    >
+    <div><a href="#home">AMIDU SHAMIKA</a></div>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -26,194 +25,351 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+    <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    <div class="dropdown_menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </header>
-<hr>
 <main id="home">
-    <section>
-        <h2>Hello, I'm</h2>
-        <h1>AMIDU SHAMIKA <mark> SOFTWARE ENGINEER</mark></h1>
-        <figure>
-            <img src="../assets/images/myImg1.png" alt="Amidu Shamika img1" width="350">
-        </figure>
-        <p>
-            I am an expert in web design and web development, specializing as a full-stack developer.<br>
-            I have a passion for creating clean, beautiful, interactive, minimalistic, and responsive UI<br>
-            that prioritizes user-friendliness, developed by modular, scalable, and functional code.
-        </p>
-        <div>
-            <button><a href="#about">About Me</a></button>
-            <button><a href="#contact">Hire Me</a></button>
-        </div>
+    <section id="homesec1">
+        <h3>Hello, I'm</h3>
+        <h2>AMIDU SHAMIKA</h2>
+        <h1 id="j_role"></h1>
     </section>
+    <section id="homesec2">
+    <p>
+        I am an expert in web design and web development, specializing as a full-stack developer.
+        I have a passion for creating clean, beautiful, interactive, minimalistic, and responsive UI
+        that prioritizes user-friendliness, developed by modular, scalable, and functional code.
+    </p>
+    <div>
+        <button><a href="#about">About Me</a></button>
+        <button><a href="#contact">Hire Me</a></button>
+    </div>
+    </section>
+    <figure>
+        <img src="./assets/images/myImg.png" alt="Amidu Shamika img1">
+    </figure>
 </main>
-<hr>
 <main id="about">
     <article>
-        <h3>ABOUT<mark> ME</mark></h3>
+        <h3>ABOUT<span> ME</span></h3>
         <figure>
-            <img src="../assets/images/myImg2.png" alt="sAmidu Shamika img2" width="333">
+            <img src="./assets/images/myImg2.png" alt="Amidu Shamika img2">
         </figure>
         <p>
-            Hello, I am Amidu Shamika, residing in Kalutara, Sri Lanka, and I am a passionate software<br>
-            developer with a strong background in creating innovative solutions. I have a deep love for coding<br>
-            and a keen interest in solving complex problems through software development. Additionally, I am<br>
-            an expert in web design and web development, with a focus on creating clean and user-friendly<br>
-            experiences. I have experience in building excellent websites that enhance the lives of those<br>
-            around me.
+            Hello, I am Amidu Shamika, residing in Kalutara, Sri Lanka, and I am a passionate software developer with a
+            strong background in creating innovative solutions. I have a deep love for coding and a keen interest in
+            solving complex problems through software development. Additionally, I am an expert in web design and
+            web development, with a focus on creating clean and user-friendly experiences. I have experience in
+            building excellent websites that enhance the lives of those around me.
         </p>
-    </article>
-    <section>
+    <section id="intro">
         <div>
             <ul>
-                <li>First Name Amidu</li>
-                <li>Last Name Shamika</li>
-                <li>Birthdate 25<sup>th</sup>  february 1999</li>
-                <li>Nationality Sri lankan</li>
-                <li>Experience 1 year</li>
-                <li>Address Kalutara, Sri Lanka</li>
-                <li>Linkedin Available</li>
-                <li>Languages English</li>
-                <li>Phone +94 78 525 525 1</li>
-                <li>Email amidushamika@gmail.com</li>
+                <li>First Name <span>Amidu</span></li>
+                <li class="c2">Last Name <span>Shamika</span></li>
+                <li>Birthdate <span>25<sup>th</sup> feb. 1999</span></li>
+                <li class="c2">Nationality <span>Sri lankan</span></li>
+                <li>Experience <span>1 year</span></li>
+                <li class="c2">Address <span>Kalutara, Sri Lanka</span></li>
+                <li>Linkedin <span>Available</span></li>
+                <li class="c2">Languages <span>English</span></li>
+                <li>Phone <span>+94 78 525 525 1</span></li>
+                <li class="c2">Email <span>amidushamika@gmail.com</span></li>
             </ul>
-        </div>
-        <div>
-            <button><a href="../assets/K.G Amidu Shamika_CV.pdf" download>DOWNLOAD MY CV</a></button>
+            <button id="downloadCV"><a href="./assets/K.G Amidu Shamika_CV.pdf" download>DOWNLOAD MY CV</a></button>
         </div>
     </section>
-    <section>
-        <h3>EDUCATION</h3>
-        <p><b>BACHELOR DEGREE</b><br>BSc (Hons) (UG) In<br>Computer Science<br>IJSE Panadura.</p>
+    </article>
+    <div id="intro2">
+    <section id="education">
+        <h3 class="intro2h3">EDUCATION</h3>
+        <div class="mid-line"></div>
+        <div class="dot"></div>
+        <p id="degree"><b>BACHELOR DEGREE</b><br>BSc (Hons) (UG) In<br>Computer Science<br>IJSE Panadura.</p>
+        <div class="dot"></div>
         <p><b>ADVANCED LEVEL</b><br>2019 A/L Biology Stream<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
-        <p><b>ORDINARY LEVEL</b><br>2015 O/L Sinhala Medium<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
+        <div class="dot"></div>
+        <p><b>ORDINARY LEVEL</b><br>2015 O/L S.M<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
     </section>
-    <section>
-        <h3>EXPERIENCES</h3>
-        <p><b>Computer Hardware Technician</b><br>August 2018 - Now<br>At my own business</p>
-        <p><b>Expert Employee</b><br>January 2021 - Now<br>At SproutGigs</p>
-        <p><b>Spot Trader</b><br>January 2021 - Now<br>At Binance</p>
+    <section id="experiences">
+        <h3 class="intro2h3">EXPERIENCES</h3>
+        <div class="mid-line"></div>
+        <div class="dot"></div>
+        <p><b>PC Hardware Technician</b><br>August 2018 - Now<br>At my own business</p>
+        <div class="dot"></div>
+        <p><b>Expert Employee</b><br>Jan. 2021 - Now<br>At SproutGigs</p>
+        <div class="dot"></div>
+        <p><b>Spot Trader</b><br>Jan. 2021 - Now<br>At Binance</p>
     </section>
-    <section>
-        <h3>SKILLS</h3>
+    </div>
+    <section id="skills">
+        <h3 class="intro2h3">SKILLS</h3>
         <div>
-            <img src="../assets/images/html-logo.png" alt="html-logo" width="50"><b>HTML</b>
-            <input type="range" value="90"><span><b>90</b></span>
-            <img src="../assets/images/css-logo.png" alt="css-logo" width="50"><b>CSS</b>
-            <input type="range" value="95"><span><b>95</b></span>
-            <img src="../assets/images/javascript-logo.png" alt="javascript-logo" width="50"><b>JAVASCRIPT</b>
-            <input type="range" value="85"><span><b>85</b></span>
-            <br><br>
-            <img src="../assets/images/java-logo.png" alt="java-logo" width="50"><b>JAVA</b>
-            <input type="range" value="95"><span><b>95</b></span>
-            <img src="../assets/images/mysql-logo.png" alt="mysql-logo" width="50"><b>MySQL</b>
-            <input type="range" value="90"><span><b>90</b></span>
-            <img src="../assets/images/angular-js-logo.png" alt="angular-js-logo" width="50"><b>ANGULAR JS</b>
-            <input type="range" value="85"><span><b>85</b></span>
+            <div>
+                <img class="skill-logo" src="./assets/images/html-logo.png" alt="html-logo">
+                <b>HTML</b><b>90%</b>
+                <div class="progress-line"><span id="html"></span></div>
+            </div>
+            <div>
+                <img class="skill-logo" src="./assets/images/css-logo.png" alt="css-logo">
+                <b>CSS</b><b>95%</b>
+                <div class="progress-line"><span id="css"></span></div>
+            </div>
+            <div>
+                <img class="skill-logo" src="./assets/images/javascript-logo.png" alt="javascript-logo">
+                <b>JAVASCRIPT</b><b>85%</b>
+                <div class="progress-line"><span id="js"></span></div>
+            </div>
+            <div>
+                <img class="skill-logo" src="./assets/images/java-logo.png" alt="java-logo">
+                <b>JAVA</b><b>95%</b>
+                <div class="progress-line"><span id="java"></span></div>
+            </div>
+            <div>
+                <img class="skill-logo" src="./assets/images/mysql-logo.png" alt="mysql-logo">
+                <b>MySQL</b><b>90%</b>
+                <div class="progress-line"><span id="mysql"></span></div>
+            </div>
+            <div>
+                <img class="skill-logo" src="./assets/images/angular-js-logo.png" alt="angular-js-logo">
+                <b>ANGULAR JS</b><b>85%</b>
+                <div class="progress-line"><span id="ajs"></span></div>
+            </div>
         </div>
     </section>
 </main>
-<hr>
 <main id="assignments">
-    <section>
     <h3>ASSIGNMENTS</h3>
+    <section>
         <div>
-            <button><br>Assignment 01<br><br><a href="">View</a></button>
-            <button><br>Assignment 02<br><br><a href="">View</a></button>
-            <button><br>Assignment 02<br><br><a href="">View</a></button>
-            <button><br>Assignment 04<br><br><a href="">View</a></button>
-            <br><br>
-            <button><br>Assignment 05<br><br><a href="">View</a></button>
-            <button><br>Assignment 06<br><br><a href="">View</a></button>
-            <button><br>Assignment 07<br><br><a href="">View</a></button>
-            <button><br>Assignment 08<br><br><a href="">View</a></button>
-            <br><br>
-            <button><br>Assignment 09<br><br><a href="">View</a></button>
-            <button><br>Assignment 10<br><br><a href="">View</a></button>
-            <button><br>Assignment 11<br><br><a href="">View</a></button>
-            <button><br>Assignment 12<br><br><a href="">View</a></button>
+            <button class="custom-btn btn-assign"><span id="assignment1">View</span><span>Assignment 01</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment2">View</span><span>Assignment 02</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment3">View</span><span>Assignment 03</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment4">View</span><span>Assignment 04</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment5">View</span><span>Assignment 05</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment6">View</span><span>Assignment 06</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment7">View</span><span>Assignment 07</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment8">View</span><span>Assignment 08</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment9">View</span><span>Assignment 09</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment10">View</span><span>Assignment 10</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment11">View</span><span>Assignment 11</span></button>
+            <button class="custom-btn btn-assign"><span id="assignment12">View</span><span>Assignment 12</span></button>
         </div>
     </section>
 </main>
-<hr>
 <main id="projects">
-    <section>
-        <h3>PROJECTS</h3>
-        <section>
-            <h4><mark>01. STAND ALONE APPLICATION<br>
-            CAR RENTAL MANAGEMENT SYSTEM</mark></h4>
-            <p><b>Car Rental Management System Of Wheel Deal Auto Rental Company.</b><br>
-                1st Semester Final Project implemented using <br> MVC Architecture and Java Database Connectivity.<br>
-                ( Institute Of Software Engineering - IJSE ) <br>
-                View in GitHub :<a href="https://github.com/Amidu99/Car-Rental-Management-System-v1.0.0">
-                    <img src="../assets/images/link.png"
-                    alt="view" width="15"></a> <br>
-                <img src="../assets/images/project1.png" alt="project-01" width="400">
-            </p>
-        </section>
-        <section>
-            <h4><mark>02. STAND ALONE APPLICATION<br>
-                CAR RENTAL MANAGEMENT SYSTEM</mark></h4>
-            <p><b>Car Rental Management System Of Wheel Deal Auto Rental Company.</b><br>
-                1st Semester Final Project implemented using <br> Layered Architecture and Java Database Connectivity.<br>
-                ( Institute Of Software Engineering - IJSE ) <br>
-                View in GitHub :<a href="https://github.com/Amidu99/Car-Rental-Management-System-v2.0.0">
-                    <img src="../assets/images/link.png"
-                         alt="view" width="15"></a> <br>
-                <img src="../assets/images/project2.png" alt="project-02" width="400">
-            </p>
-        </section>
-        <section>
-            <h4><mark>03. CHAT APPLICATION<br>
-                GROUP CHAT APPLICATION</mark></h4>
-            <p><b>Live Chat Application Of Play Tech Pvt Ltd.</b><br>
-                2nd Semester Network Programming Module Final Project <br> implemented using Multi Threaded Programming.<br>
-                ( Institute Of Software Engineering - IJSE )<br>
-                View in GitHub :<a href="https://github.com/Amidu99/Live-Chat-Application">
-                    <img src="../assets/images/link.png"
-                         alt="view" width="15"></a> <br>
-                <img src="../assets/images/project3.png" alt="project-03" width="400">
-            </p>
-        </section>
+    <h3>PROJECTS</h3>
+    <section id="project-cards">
+        <div class="container">
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="two">
+            <input type="radio" name="dot" id="three">
+            <div class="main-card">
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project1.png" alt="project-01">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">01. STAND ALONE APPLICATION</div>
+                                <div class="project-name">CAR RENTAL MANAGEMENT SYSTEM</div>
+                                <div class="project-details">
+                                    Car Rental Management System Of Wheel Deal Auto Rental Company.
+                                    <br>1st Semester Final Project implemented using MVC Architecture and Java Database Connectivity.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/Car-Rental-Management-System-v1.0.0">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project2.png" alt="project-02">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">02. STAND ALONE APPLICATION</div>
+                                <div class="project-name">CAR RENTAL MANAGEMENT SYSTEM</div>
+                                <div class="project-details">
+                                    Car Rental Management System Of Wheel Deal Auto Rental Company.
+                                    <br>1st Semester Final Project implemented using Layered Architecture and Java Database Connectivity.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/Car-Rental-Management-System-v2.0.0">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project3.png" alt="project-03">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">03. CHAT APPLICATION</div>
+                                <div class="project-name">GROUP CHAT APPLICATION</div>
+                                <div class="project-details">
+                                    Live Chat Application Of Play Tech Pvt Ltd.
+                                    <br>2nd Semester Network Programming Module Final Project
+                                    <br> implemented using Multi Threaded Programming.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/Live-Chat-Application">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project4.png" alt="project-04">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">04. STAND ALONE APPLICATION</div>
+                                <div class="project-name">HOSTEL MANAGEMENT SYSTEM</div>
+                                <div class="project-details">
+                                    Hostel Management System Of D24 HOSTEL.
+                                    <br>2nd Semester ORM Module Final Project implemented using Hibernate & Layered architecture.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/Hostel-Management-System">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project5.png" alt="project-05">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">05. STAND ALONE APPLICATION</div>
+                                <div class="project-name">CONNECT 4 AI-GAME</div>
+                                <div class="project-details">
+                                    Connect 4 Game including the Artificial Intelligence.
+                                    <br>2nd Semester OOP Module Final Project.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/OOP-Final_Coursework-AI-Game">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="./assets/images/project6.png" alt="project-06">
+                            </div>
+                            <div class="details">
+                                <div class="project-type">06. WEB APPLICATION</div>
+                                <div class="project-name">POS SYSTEM</div>
+                                <div class="project-details">
+                                    POS System Of Sampath Pvt Ltd.
+                                    <br>2nd Semester Internet Technologies Module Final Project
+                                    <br> implemented using HTML, CSS, JS.
+                                    <br>( Institute Of Software Engineering - IJSE )
+                                </div>
+                            </div>
+                            <div class="media-icons">
+                                <span>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                </span>
+                                <a href="https://github.com/Amidu99/Web-POS_System-UI">
+                                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <label for="one" class="one active"></label>
+                <label for="two" class="two"></label>
+                <label for="three" class="three"></label>
+            </div>
+        </div>
     </section>
 </main>
-<hr>
 <main id="contact">
     <section>
-        <h3>GET IN <mark> TOUCH</mark></h3>
-        <p><b>I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</b></p>
-        <p><b>If you have any suggestion, project, or even you want to say Hello… please fill out the form below
-        <br>and I will reply you shortly.</b></p>
+        <h3>GET IN <span> TOUCH</span></h3>
+        <p id="open-discuss">I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</p>
+        <p id="say-hello">If you have any suggestion, project, or even you want to say Hello… please fill out the
+            form below, and I will reply you shortly.</p>
+        <div>
         <form>
-            <input type="text" name="name" id="name" placeholder="YOUR NAME">
-            <input type="email" name="email" id="email" placeholder="YOUR EMAIL"><br><br>
-            <textarea id="message" placeholder="YOUR MESSAGE" cols="46" rows="10"></textarea><br><br>
-            <input type="submit" value="Send Message">
+            <input type="text" name="name" id="client-name" placeholder="YOUR NAME">
+            <input type="email" name="email" id="client-email" placeholder="YOUR EMAIL">
+            <textarea id="client-message" placeholder="YOUR MESSAGE" cols="46" rows="10"></textarea>
+            <input id="btn-send" type="submit" value="Send Message">
         </form>
-        <br>
-        <section>
-            <p><b>Phone</b><br>
-                +9478 525 525 1</p>
-            <p><b>Email</b><br>
-                amidushamika@gmail.com</p>
-            <p><b>Location</b><br>
-                Matugama, Kalutara.</p>
+        <section id="contactopt">
+            <p class="contact-head">Phone</p>
+            <p>+9478 525 525 1</p>
+            <p class="contact-head">Email</p>
+            <p>amidushamika@gmail.com</p>
+            <p class="contact-head">Location</p>
+            <p>Matugama, Kalutara.</p>
+            <p class="contact-head">Social Profiles</p>
             <div>
-                <p><b>Social Profiles</b></p>
-                <a href="https://wa.me/+94785255251/"><img src="../assets/buttons/whatsapp.png" width="45" alt="whatsapp"></a>
-                <a href="https://github.com/Amidu99"><img src="../assets/buttons/github.png" width="45" alt="github"></a>
-                <a href="https://www.linkedin.com/in/amidu-shamika-9b755927b/"><img src="../assets/buttons/linkedin.png" width="45" alt="linkedin"></a>
-                <a href="https://www.facebook.com/Amidu.Shamika/"><img src="../assets/buttons/facebook.png" width="45" alt="facebook"></a>
-                <a href="https://twitter.com"><img src="../assets/buttons/twitter.png" width="45" alt="twitter"></a>
+                <a href="https://wa.me/+94785255251/"><img src="./assets/images/buttons/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://github.com/Amidu99"><img src="./assets/images/buttons/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/amidu-shamika-9b755927b/"><img src="./assets/images/buttons/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.facebook.com/Amidu.Shamika/"><img src="./assets/images/buttons/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com"><img src="./assets/images/buttons/twitter.png" alt="twitter"></a>
             </div>
         </section>
+        </div>
     </section>
 </main>
 <footer>
-    <br>
-    <hr>
-    <p><b>©Copyright - All Right Reserved Designed by Amidu Shamika</b>
-        <a href="#header"><img src="../assets/images/up.png" alt="GoHome" width="45"></a>
-    </p>
+    <a href="#home"><img id="fix-icon" src="./assets/images/buttons/up.png" alt="GoHome"></a>
+    <p><b>©Copyright - All Right Reserved Designed by Amidu Shamika</b></p>
 </footer>
+<script src="./assets/assignments/fontawesome/js/all.min.js"></script>
+<script src="./assets/styles/js/jquery.min.js"></script>
+<script src="./assets/styles/js/script.js"></script>
 </body>
 </html>
