@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/sky.jpg");
+    background-size: cover;
+}
+img:nth-child(1){
+    position: absolute;
+    width: 350vw;
+    height: 33%;
+    bottom: 0;
+    margin-left: 0;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+img:nth-child(2){
+    position: absolute;
+    width: 350vw;
+    height: 50%;
+    bottom: 33%;
+    margin-left: 0;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+img:nth-child(3){
+    height: 117px;
+    width: 350px;
+    bottom: 17%;
+    position: fixed;
+    margin-left: calc(100vw /100 * 50 - 175px );
+}
+img:nth-child(4){
+    position: fixed;
+    width: 70px;
+    aspect-ratio: 1/1;
+    bottom: 14%;
+    margin-left: calc(50% - 148px);
+    animation-name: rotating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+img:nth-child(5){
+    position: fixed;
+    width: 70px;
+    aspect-ratio: 1/1;
+    bottom: 14%;
+    margin-left: calc(50% + 75px);
+    animation-name: rotating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotating {
+    100%{
+        transform: rotate(1400deg);
+    }
+}
+@keyframes moving {
+    100% {
+        transform: translateX(-2100px);
+    }
+}
+@media all and (max-aspect-ratio: 5/2) {
+    img:nth-child(4),
+    img:nth-child(5) {
+        bottom: 15.5%;
+    }
+}
+@media all and (max-aspect-ratio: 16/9) {
+    img:nth-child(4),
+    img:nth-child(5) {
+        bottom: 15.5%;
+    }
+}
+@media all and (max-aspect-ratio: 1/2) {
+    img:nth-child(4),
+    img:nth-child(5) {
+        bottom: 16.25%;
+    }
+}
+@media all and (max-width: 900px) {
+    @keyframes moving {
+        100% {
+            transform: translateX(-1800px);
+        }
+    }
+}
+@media all and (max-width: 750px) {
+    @keyframes moving {
+        100% {
+            transform: translateX(-1600px);
+        }
+    }
+}
+@media all and (max-width: 650px) {
+    @keyframes moving {
+        100% {
+            transform: translateX(-1400px);
+        }
+    }
+}
+@media all and (max-width: 575px) {
+    @keyframes moving {
+        100% {
+            transform: translateX(-1200px);
+        }
+    }
+}
+@media all and (max-width: 500px) {
+    @keyframes moving {
+        100% {
+            transform: translateX(-800px);
+        }
+    }
+}

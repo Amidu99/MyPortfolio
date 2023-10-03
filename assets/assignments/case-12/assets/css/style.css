@@ -1,0 +1,10 @@
+body{
+    background-color: #000000;
+}
+h1{
+    color: #ff0000;
+    font-family: "Segoe UI Black", serif;
+    text-align: center;
+    text-shadow: 0 0 2px #8a0202, 0 0 3px #de0505, 0 0 5px #ee0c0c, 0 0 8px #ee3131;
+    position: relative;
+}

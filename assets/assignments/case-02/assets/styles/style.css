@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+header{
+    position: relative;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
+header>img{
+    position: absolute;
+    width: 15%;
+    max-width: 300px;
+    max-height: 40px;
+    left: 1%;
+    top: 25%;
+}
+header>nav{
+    position: absolute;
+    width: fit-content;
+    right: 25px;
+    top: 7px;
+}
+header>nav>dl>dd{
+    font-family: 'Concert One', cursive;
+    display: inline-block;
+    margin-left: 25px;
+}
+main{
+    position: relative;
+}
+main>aside{
+    background: #4C0182;
+    position: absolute;
+    margin-top: -5px;
+    top: 0;
+    bottom: 0;
+    width: 17%;
+}
+main>aside>nav>dl{
+    margin-top: 40px;
+}
+main>aside>nav>dl>dd{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: 'Concert One', cursive;
+    color: #F7F9F8;
+}
+main>section{
+    margin-left: 17.2%;
+    margin-top: 5px;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    font-family: 'Teko', sans-serif;
+}
+main>section>div{
+    position: relative;
+}
+main>section>div>div{
+    width: calc(100%/3);
+    border: 1px solid #01DC03;
+    display: inline-block;
+    margin-right: -5px;
+    box-sizing: border-box;
+}
+main>section>div>div>img{
+    width: 100%;
+}
+footer{
+    position: relative;
+    height: 40px;
+    background: #808080;
+}
+footer>span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Segoe UI Semibold", serif;
+    font-size: medium;
+    color: #F7F9F8;
+}
+@media all and (max-width: 768px) {
+    header>img{
+        width: 115px;
+        left: 3px;
+        top: 19px;
+    }
+    main>aside{
+        width: 120px;
+    }
+    main>aside>nav>dl{
+        margin-top: 20px;
+    }
+    main>aside>nav>dl>dd{
+        margin-left: 8px;
+        margin-bottom: 15px;
+    }
+    main>section{
+        margin-left: 124px;
+    }
+}
+@media all and (max-width: 560px) {
+    header>nav{
+        display: none;
+    }
+    main>section>div>div {
+        width: 99.25%;
+    }
+}

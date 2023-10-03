@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+    margin: 0;
+    background-color: #3d8df1;
+}
+body>a{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+}
+:root {
+    --box-width: 120px;
+    --box-height: 55px;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+section>div{
+    width: var(--box-width);
+    height: var(--box-height);
+    border-radius: 10px;
+    background-color: #0000ff;
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes my-animation {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    25% {
+        margin-top: 0;
+        margin-left: calc(100vw - var(--box-width));
+        transform: rotate(180deg);
+        background-color: #ffff00;
+    }
+    50% {
+        margin-top: calc(100vh - var(--box-height));
+        margin-left: calc(100vw - var(--box-width));
+        transform: rotate(0);
+        background-color: #FE0000;
+    }
+    75% {
+        margin-top: calc(100vh - var(--box-height));
+        margin-left: 0;
+        transform: rotate(180deg);
+        background-color: #ff1493;
+    }
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(0);
+        background-color: #ffA500;
+    }
+}

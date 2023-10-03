@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+    margin: 0;
+}
+body>a{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+}
+body>div{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    box-sizing: border-box;
+}
+body>div>div{
+    border: 1px solid black;
+}
+body>div>div:nth-child(1){
+    background: #FE0000;
+}
+body>div>div:nth-child(2){
+    background: #008001;
+}
+body>div>div:nth-child(3){
+    background: #FF4500;
+}
+body>div>div:nth-child(4){
+    background: #81007F;
+}
+body>div>div:nth-child(5){
+    background: #FF1494;
+}
+body>div>div:nth-child(6){
+    background: #0000FE;
+}
+body>div>div:nth-child(7){
+    background: #A52B2A;
+}
+body>div>div:nth-child(8){
+    background: #EE82EF;
+}
+body>div>div:nth-child(9){
+    background: #4B0081;
+}
+body>div>div:nth-child(10){
+    background: #FED700;
+}
+body>div>div:nth-child(11){
+    background: #609DA0;
+}
+body>div>div:nth-child(12){
+    background: #00FFFF;
+}

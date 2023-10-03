@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+    margin: 0;
+    background-color: #3d8df1;
+}
+body>a{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: calc(50vh + 110px);
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+}
+div{
+    width: 1px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 4px solid #00008b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: my-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes my-animation {
+    from{
+        width: 1px;
+    }
+    to{
+        width: 200px;
+        opacity: 0;
+    }
+}
