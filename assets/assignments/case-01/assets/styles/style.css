@@ -61,11 +61,8 @@ section>.main>div>div{
     aspect-ratio: 1/1;
     background: #F7F9F8;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    left: calc(50vw - 6vw);
+    top: calc(50vh - 6vw);
 }
 #mid-circle{
     width: 7vw;
@@ -74,11 +71,8 @@ section>.main>div>div{
     border-radius: 100%;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    position: relative;
+    top: 2.5vw;
     margin: auto;
 }
 .half{
@@ -117,7 +111,7 @@ section>.main>div>div{
     -webkit-border-radius: 0 0 0 100px;
 }
 #corner4{
-    bottom: 0;
+    top: calc(100vh - 7vw);
     left: 0;
     border-radius: 0 100px 0 0;
     -moz-border-radius: 0 100px 0 0;
@@ -126,14 +120,14 @@ section>.main>div>div{
 #corner5 {
     left: 0;
     right: 0;
-    bottom: 0;
+    top: calc(100vh - 7vw);
     margin: auto;
     border-radius: 100px 100px 0 0;
     -moz-border-radius: 100px 100px 0 0;
     -webkit-border-radius: 100px 100px 0 0;
 }
 #corner6{
-    bottom: 0;
+    top: calc(100vh - 7vw);
     right: 0;
     border-radius: 100px 0 0 0;
     -moz-border-radius: 100px 0 0 0;

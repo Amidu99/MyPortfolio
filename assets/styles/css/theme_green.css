@@ -1,0 +1,248 @@
+*::-webkit-scrollbar-thumb {
+    background: #5DE23C;
+}
+header>div>a:hover{
+    color: #aadeaa;
+    text-shadow: 0 0 3px #5DE23C, 0 0 7px #5DE23C, 0 0 10px #5DE23C, 0 0 15px #5DE23C;
+}
+header>nav>a:hover{
+    color: #aadeaa;
+    text-shadow: 0 0 3px #47f81f, 0 0 7px #47f81f, 0 0 10px #47f81f, 0 0 15px #47f81f;
+}
+.toggle_btn svg:hover{
+    color: #5DE23C;
+}
+.toggle_btn.open > svg {
+    color: #5DE23C;
+    border: 1px solid #5DE23C;
+    box-shadow: 0 0 2px #5DE23C, 0 0 5px #47f81f, 0 0 7px #47f81f, 0 0 10px #47f81f;
+}
+
+/*Home Styles*/
+#homesec1>h3{
+    color: #5DE23C;
+}
+#homesec1>h1{
+    color: #5DE23C;
+}
+#homesec1>h1>span{
+    color: #5DE23C;
+}
+#homesec2>div>button{
+    background: #5DE23C;
+    border: 2px solid #5DE23C;
+}
+#homesec2>div>button:hover{
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 10px #47f81f;
+}
+#homesec2>div>button>a:hover{
+    color: #5DE23C;
+}
+
+/*About Me Styles*/
+#about>article>h3>span{
+    color:  #5DE23C;
+}
+#intro>div>ul>li>span{
+    color: #5DE23C;
+}
+#downloadCV{
+    border: 2px solid #5DE23C;
+    background: #5DE23C;
+}
+#downloadCV:hover{
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 10px #47f81f;
+}
+#downloadCV>a:hover{
+    color: #5DE23C;
+}
+
+/*About Me intro2 Styles*/
+.mid-line{
+    background-color: #5DE23C;
+}
+
+/*Education Styles*/
+#education div:nth-child(3) {
+    background-color: #5DE23C;
+}
+#education div:nth-child(5) {
+    background-color: #5DE23C;
+}
+#education div:nth-child(7) {
+    background-color: #5DE23C;
+}
+
+/*Experiences Styles*/
+#experiences div:nth-child(3) {
+    background-color: #5DE23C;
+}
+#experiences div:nth-child(5) {
+    background-color: #5DE23C;
+}
+#experiences div:nth-child(7) {
+    background-color: #5DE23C;
+}
+
+/*Skills Styles*/
+#skills>div>div>b:nth-child(2){
+    color: #5DE23C;
+}
+#skills>div>div>b:nth-child(3){
+    color: #5DE23C;
+    border: 2px solid #5DE23C;
+}
+#skills>div>div>b:nth-child(3)::before {
+    border-top-color: #5DE23C;
+}
+#skills>div>div>b:nth-child(3)::after {
+    color: #5DE23C;
+    border: 2px solid #5DE23C;
+}
+.progress-line span{
+    background-color: #5DE23C;
+}
+
+@-webkit-keyframes running-progress-glow {
+    from {
+        width: 10%;
+        background:#ff0000;
+        box-shadow: 0 0 1px #ff0000,
+        0 0 1px #ff0000,
+        0 0 1px #ff0000,
+        0 0 2px #ff0000;
+    }
+    to {
+        box-shadow: 0 0 1px #5DE23C,
+        0 0 1px #47f81f,
+        0 0 1px #47f81f,
+        0 0 2px #47f81f;
+    }
+}
+
+/*Assignments Styles*/
+.btn-assign span {
+    background: rgb(93, 226, 60);
+    background: linear-gradient(0deg, rgb(93, 226, 60) 0%, rgba(0,0,0,.1) 100%);
+}
+.btn-assign:hover span:nth-child(1) {
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 20px #47f81f;
+}
+.btn-assign:hover span:nth-child(2) {
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 30px #47f81f;
+}
+@-webkit-keyframes shiny-btn {
+    25% {border-top: 4px solid #5DE23C;}
+    50% { border-right: 4px solid #5DE23C;}
+    75% { border-bottom: 4px solid #5DE23C;}
+    100% { border-left: 4px solid #5DE23C;}
+}
+
+/*Projects Styles*/
+@-webkit-keyframes shiny-card {
+    25% {border-top: 1px solid #5DE23C;}
+    50% { border-right: 1px solid #5DE23C;}
+    75% { border-bottom: 1px solid #5DE23C;}
+    100% { border-left: 1px solid #5DE23C;}
+}
+.main-card .cards .card:hover{
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 10px #47f81f,
+    0 0 20px #47f81f;
+}
+.card .content .details .project-name{
+    color: #5DE23C;
+}
+.card .content .media-icons span{
+    color: #5DE23C;
+}
+.card .content .media-icons a{
+    background: #5DE23C;
+}
+.card .content .media-icons a:hover{
+    border-color: #5DE23C;
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 10px #47f81f;
+}
+.card .content .media-icons span svg{
+    color: #5DE23C;
+}
+.button label{
+    background: #5DE23C;
+}
+#one:checked ~ .button label.one{
+    box-shadow: 0 0 3px #5DE23C,
+    0 0 3px #47f81f,
+    0 0 3px #47f81f,
+    0 0 8px #47f81f;
+}
+#two:checked ~ .button label.two{
+    box-shadow: 0 0 3px #5DE23C,
+    0 0 3px #47f81f,
+    0 0 3px #47f81f,
+    0 0 8px #47f81f;
+}
+#three:checked ~ .button label.three{
+    box-shadow: 0 0 3px #5DE23C,
+    0 0 3px #47f81f,
+    0 0 3px #47f81f,
+    0 0 8px #47f81f;
+}
+
+/*Contact Styles*/
+#contact>section>h3>span{
+    color: #5DE23C;
+}
+#client-name{
+    border: 2px solid #5DE23C;
+}
+#client-name::placeholder{
+    color: #5DE23C;
+}
+#client-email{
+    border: 2px solid #5DE23C;
+}
+#client-email::placeholder{
+    color: #5DE23C;
+}
+#client-message{
+    border: 2px solid #5DE23C;
+}
+#client-message::placeholder{
+    color: #5DE23C;
+}
+#btn-send{
+    border: 2px solid #5DE23C;
+    background: #5DE23C;
+}
+#btn-send:hover{
+    color: #5DE23C;
+    box-shadow: 0 0 5px #5DE23C,
+    0 0 5px #47f81f,
+    0 0 5px #47f81f,
+    0 0 10px #47f81f;
+}
+#contact>section>div>section>div>a>img{
+    border: 3px solid #5DE23C;
+}
+#contact>section>div>section>div>a>img:hover{
+    box-shadow: 0 0 3px #5DE23C,
+    0 0 3px #47f81f,
+    0 0 3px #47f81f,
+    0 0 6px #47f81f;
+}

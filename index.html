@@ -6,7 +6,11 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/css/normalize.css">
     <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="./assets/styles/css/pre_loader.css">
+    <link href="./assets/styles/hover_master/css/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/assignments/fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <meta name="keyword" content="amidu shamika, amidu, shamika, gdse, ijse, kalutara, ijse panadura, matugama,
         amidu's portfolio, amidu shamika's portfolio, portfolio, developer, fullstack developer, software engineer,
         software, backend developer, frontend developer, java, html, javascript, coding, programming,amidushamika,
@@ -16,6 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div id="preloader">
+    <div id="preloader-image"></div>
+    <div id="preloader-text"></div>
+</div>
 <header id="header">
     <div><a href="#home">AMIDU SHAMIKA</a></div>
     <nav>
@@ -40,28 +48,35 @@
         <h2>AMIDU SHAMIKA</h2>
         <h1 id="j_role"></h1>
     </section>
-    <section id="homesec2">
+    <section id="homesec2" data-aos="zoom-in" data-aos-duration="1000">
     <p>
         I am an expert in web design and web development, specializing as a full-stack developer.
         I have a passion for creating clean, beautiful, interactive, minimalistic, and responsive UI
         that prioritizes user-friendliness, developed by modular, scalable, and functional code.
     </p>
     <div>
-        <button><a href="#about">About Me</a></button>
-        <button><a href="#contact">Hire Me</a></button>
+        <button class="hvr-hang"><a href="#about">About Me</a></button>
+        <button class="hvr-hang"><a href="#contact">Hire Me</a></button>
     </div>
     </section>
-    <figure>
+    <figure class="animate__animated animate__bounce">
         <img src="./assets/images/myImg.png" alt="Amidu Shamika img1">
     </figure>
+    <div id="color_changer">
+        <img id="color_changer_icon" title="Change Theme" src="./assets/images/buttons/up.png" alt="ThemeChanger" class="hvr-pulse-shrink">
+    </div>
+    <div id="color_btn_set"><div class="color_btn hvr-pulse-shrink" title="CHERRY"></div>
+        <div class="color_btn hvr-pulse-shrink" title="LIME"></div>
+        <div class="color_btn hvr-pulse-shrink" title="SKY"></div>
+        <div class="color_btn hvr-pulse-shrink" title="BUMBLEBEE"></div></div>
 </main>
 <main id="about">
     <article>
-        <h3>ABOUT<span> ME</span></h3>
-        <figure>
+        <h3 data-aos="flip-up" data-aos-duration="1000">ABOUT<span> ME</span></h3>
+        <figure data-aos="fade-up" data-aos-duration="2000">
             <img src="./assets/images/myImg2.png" alt="Amidu Shamika img2">
         </figure>
-        <p>
+        <p data-aos="zoom-in" data-aos-duration="1000">
             Hello, I am Amidu Shamika, residing in Kalutara, Sri Lanka, and I am a passionate software developer with a
             strong background in creating innovative solutions. I have a deep love for coding and a keen interest in
             solving complex problems through software development. Additionally, I am an expert in web design and
@@ -71,73 +86,79 @@
     <section id="intro">
         <div>
             <ul>
-                <li>First Name <span>Amidu</span></li>
-                <li class="c2">Last Name <span>Shamika</span></li>
-                <li>Birthdate <span>25<sup>th</sup> feb. 1999</span></li>
-                <li class="c2">Nationality <span>Sri lankan</span></li>
-                <li>Experience <span>1 year</span></li>
-                <li class="c2">Address <span>Kalutara, Sri Lanka</span></li>
-                <li>Linkedin <span>Available</span></li>
-                <li class="c2">Languages <span>English</span></li>
-                <li>Phone <span>+94 78 525 525 1</span></li>
-                <li class="c2">Email <span>amidushamika@gmail.com</span></li>
+                <li data-aos="flip-up" data-aos-duration="1500">First Name <span>Amidu</span></li>
+                <li class="c2" data-aos="flip-up" data-aos-duration="1500">Last Name <span>Shamika</span></li>
+                <li data-aos="flip-up" data-aos-duration="1500">Birthdate <span>25<sup>th</sup> feb. 1999</span></li>
+                <li class="c2" data-aos="flip-up" data-aos-duration="1500">Nationality <span>Sri lankan</span></li>
+                <li data-aos="flip-up" data-aos-duration="1500">Experience <span>1 year</span></li>
+                <li class="c2" data-aos="flip-up" data-aos-duration="1500">Address <span>Kalutara, Sri Lanka</span></li>
+                <li data-aos="flip-up" data-aos-duration="1500">Linkedin <span>Available</span></li>
+                <li class="c2" data-aos="flip-up" data-aos-duration="1500">Languages <span>English</span></li>
+                <li data-aos="flip-up" data-aos-duration="1500">Phone <span>+94 78 525 525 1</span></li>
+                <li class="c2" data-aos="flip-up" data-aos-duration="1500">Email <span>amidushamika@gmail.com</span></li>
             </ul>
-            <button id="downloadCV"><a href="./assets/K.G Amidu Shamika_CV.pdf" download>DOWNLOAD MY CV</a></button>
+            <button id="downloadCV" data-aos="flip-up" data-aos-duration="2000">
+                <a href="./assets/K.G Amidu Shamika_CV.pdf" download>DOWNLOAD MY CV</a>
+            </button>
         </div>
     </section>
     </article>
     <div id="intro2">
     <section id="education">
-        <h3 class="intro2h3">EDUCATION</h3>
-        <div class="mid-line"></div>
-        <div class="dot"></div>
-        <p id="degree"><b>BACHELOR DEGREE</b><br>BSc (Hons) (UG) In<br>Computer Science<br>IJSE Panadura.</p>
-        <div class="dot"></div>
-        <p><b>ADVANCED LEVEL</b><br>2019 A/L Biology Stream<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
-        <div class="dot"></div>
-        <p><b>ORDINARY LEVEL</b><br>2015 O/L S.M<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
+        <h3 class="intro2h3" data-aos="fade-down-right">EDUCATION</h3>
+        <div class="mid-line" data-aos="fade-up"></div>
+        <div class="dot" data-aos="fade-up-right"></div>
+        <p id="degree" data-aos="fade-up" data-aos-duration="1000"><b>BACHELOR DEGREE</b>
+            <br>BSc (Hons) (UG) In<br>Computer Science<br>IJSE Panadura.</p>
+        <div class="dot" data-aos="fade-up-right"></div>
+        <p data-aos="fade-up" data-aos-duration="1000"><b>ADVANCED LEVEL</b>
+            <br>2019 A/L Biology Stream<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
+        <div class="dot" data-aos="fade-up-right"></div>
+        <p data-aos="fade-up" data-aos-duration="1000"><b>ORDINARY LEVEL</b>
+            <br>2015 O/L S.M<br>Ananda Sastralaya<br>National School<br>Matugama.</p>
     </section>
     <section id="experiences">
-        <h3 class="intro2h3">EXPERIENCES</h3>
-        <div class="mid-line"></div>
-        <div class="dot"></div>
-        <p><b>PC Hardware Technician</b><br>August 2018 - Now<br>At my own business</p>
-        <div class="dot"></div>
-        <p><b>Expert Employee</b><br>Jan. 2021 - Now<br>At SproutGigs</p>
-        <div class="dot"></div>
-        <p><b>Spot Trader</b><br>Jan. 2021 - Now<br>At Binance</p>
+        <h3 class="intro2h3" data-aos="fade-down-left">EXPERIENCES</h3>
+        <div class="mid-line" data-aos="fade-up"></div>
+        <div class="dot" data-aos="fade-up-left"></div>
+        <p data-aos="fade-upt" data-aos-duration="1000"><b>PC Hardware Technician</b>
+            <br>August 2018 - Now<br>At my own business</p>
+        <div class="dot" data-aos="fade-up-left"></div>
+        <p data-aos="fade-up" data-aos-duration="1000"><b>Expert Employee</b><br>Jan. 2021 - Now<br>At SproutGigs</p>
+        <div class="dot" data-aos="fade-up-left"></div>
+        <p data-aos="fade-up" data-aos-duration="1000"><b>Spot Trader</b><br>Jan. 2021 - Now<br>At Binance</p>
     </section>
     </div>
     <section id="skills">
-        <h3 class="intro2h3">SKILLS</h3>
+        <h3 class="intro2h3" data-aos="zoom-in">SKILLS</h3>
         <div>
-            <div>
-                <img class="skill-logo" src="./assets/images/html-logo.png" alt="html-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/html-logo.png" alt="html-logo">
                 <b>HTML</b><b>90%</b>
                 <div class="progress-line"><span id="html"></span></div>
             </div>
-            <div>
-                <img class="skill-logo" src="./assets/images/css-logo.png" alt="css-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/css-logo.png" alt="css-logo">
                 <b>CSS</b><b>95%</b>
                 <div class="progress-line"><span id="css"></span></div>
             </div>
-            <div>
-                <img class="skill-logo" src="./assets/images/javascript-logo.png" alt="javascript-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/javascript-logo.png" alt="javascript-logo">
                 <b>JAVASCRIPT</b><b>85%</b>
                 <div class="progress-line"><span id="js"></span></div>
             </div>
-            <div>
-                <img class="skill-logo" src="./assets/images/java-logo.png" alt="java-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/java-logo.png" alt="java-logo">
                 <b>JAVA</b><b>95%</b>
                 <div class="progress-line"><span id="java"></span></div>
             </div>
-            <div>
-                <img class="skill-logo" src="./assets/images/mysql-logo.png" alt="mysql-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/mysql-logo.png" alt="mysql-logo">
                 <b>MySQL</b><b>90%</b>
                 <div class="progress-line"><span id="mysql"></span></div>
             </div>
-            <div>
-                <img class="skill-logo" src="./assets/images/angular-js-logo.png" alt="angular-js-logo">
+            <div data-aos="flip-up" data-aos-duration="1000">
+                <img class="skill-logo hvr-wobble-skew" src="./assets/images/angular-js-logo.png" alt="angular-js-logo">
                 <b>ANGULAR JS</b><b>85%</b>
                 <div class="progress-line"><span id="ajs"></span></div>
             </div>
@@ -145,26 +166,50 @@
     </section>
 </main>
 <main id="assignments">
-    <h3>ASSIGNMENTS</h3>
+    <h3 data-aos="flip-up">ASSIGNMENTS</h3>
     <section>
         <div>
-            <button class="custom-btn btn-assign"><span id="assignment1">View</span><span>Assignment 01</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment2">View</span><span>Assignment 02</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment3">View</span><span>Assignment 03</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment4">View</span><span>Assignment 04</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment5">View</span><span>Assignment 05</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment6">View</span><span>Assignment 06</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment7">View</span><span>Assignment 07</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment8">View</span><span>Assignment 08</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment9">View</span><span>Assignment 09</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment10">View</span><span>Assignment 10</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment11">View</span><span>Assignment 11</span></button>
-            <button class="custom-btn btn-assign"><span id="assignment12">View</span><span>Assignment 12</span></button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment1">View</span><span>Assignment 01</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment2">View</span><span>Assignment 02</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment3">View</span><span>Assignment 03</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment4">View</span><span>Assignment 04</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment5">View</span><span>Assignment 05</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment6">View</span><span>Assignment 06</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment7">View</span><span>Assignment 07</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment8">View</span><span>Assignment 08</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment9">View</span><span>Assignment 09</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment10">View</span><span>Assignment 10</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment11">View</span><span>Assignment 11</span>
+            </button>
+            <button class="custom-btn btn-assign" data-aos="fade-up" data-aos-duration="1000">
+                <span id="assignment12">View</span><span>Assignment 12</span>
+            </button>
         </div>
     </section>
 </main>
 <main id="projects">
-    <h3>PROJECTS</h3>
+    <h3 data-aos="flip-up" data-aos-duration="1500">PROJECTS</h3>
     <section id="project-cards">
         <div class="container">
             <input type="radio" name="dot" id="one">
@@ -172,7 +217,7 @@
             <input type="radio" name="dot" id="three">
             <div class="main-card">
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project1.png" alt="project-01">
@@ -188,7 +233,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/Car-Rental-Management-System-v1.0.0">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -196,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project2.png" alt="project-02">
@@ -212,7 +257,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/Car-Rental-Management-System-v2.0.0">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -222,7 +267,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project3.png" alt="project-03">
@@ -239,7 +284,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/Live-Chat-Application">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -247,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project4.png" alt="project-04">
@@ -263,7 +308,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/Hostel-Management-System">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -273,7 +318,7 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project5.png" alt="project-05">
@@ -289,7 +334,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/OOP-Final_Coursework-AI-Game">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -297,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="content">
                             <div class="img">
                                 <img src="./assets/images/project6.png" alt="project-06">
@@ -314,7 +359,7 @@
                             </div>
                             <div class="media-icons">
                                 <span>
-                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake" style="color: #F1E807; padding-right: 5px;"></i>
+                                    View in GitHub: <i class="fa-solid fa-hand-point-right fa-shake"></i>
                                 </span>
                                 <a href="https://github.com/Amidu99/Web-POS_System-UI">
                                     <i class="fa-brands fa-github" style="color: #000000;"></i>
@@ -325,27 +370,29 @@
                 </div>
             </div>
             <div class="button">
-                <label for="one" class="one active"></label>
-                <label for="two" class="two"></label>
-                <label for="three" class="three"></label>
+                <label for="one" class="one active hvr-pulse"></label>
+                <label for="two" class="two hvr-pulse"></label>
+                <label for="three" class="three hvr-pulse"></label>
             </div>
         </div>
     </section>
 </main>
 <main id="contact">
-    <section>
-        <h3>GET IN <span> TOUCH</span></h3>
-        <p id="open-discuss">I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</p>
-        <p id="say-hello">If you have any suggestion, project, or even you want to say Hello… please fill out the
-            form below, and I will reply you shortly.</p>
+    <section data-aos="zoom-in-down">
+        <h3 data-aos="zoom-in-down" data-aos-duration="1500">GET IN <span> TOUCH</span></h3>
+        <p id="open-discuss" data-aos="zoom-in-down" data-aos-duration="1500">
+            I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</p>
+        <p id="say-hello" data-aos="zoom-in-down" data-aos-duration="1500">
+            If you have any suggestion, project, or even you want to say Hello…
+            please fill out the form below, and I will reply you shortly.</p>
         <div>
         <form>
-            <input type="text" name="name" id="client-name" placeholder="YOUR NAME">
-            <input type="email" name="email" id="client-email" placeholder="YOUR EMAIL">
-            <textarea id="client-message" placeholder="YOUR MESSAGE" cols="46" rows="10"></textarea>
+            <input type="text" name="name" id="client-name" placeholder="YOUR NAME" data-aos="zoom-in-down">
+            <input type="email" name="email" id="client-email" placeholder="YOUR EMAIL" data-aos="zoom-in-down">
+            <textarea id="client-message" placeholder="YOUR MESSAGE" cols="46" rows="10" data-aos="zoom-in-down"></textarea>
             <input id="btn-send" type="submit" value="Send Message">
         </form>
-        <section id="contactopt">
+        <section id="contactopt" data-aos="zoom-in-down" data-aos-duration="2000">
             <p class="contact-head">Phone</p>
             <p>+9478 525 525 1</p>
             <p class="contact-head">Email</p>
@@ -354,11 +401,21 @@
             <p>Matugama, Kalutara.</p>
             <p class="contact-head">Social Profiles</p>
             <div>
-                <a href="https://wa.me/+94785255251/"><img src="./assets/images/buttons/whatsapp.png" alt="whatsapp"></a>
-                <a href="https://github.com/Amidu99"><img src="./assets/images/buttons/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/amidu-shamika-9b755927b/"><img src="./assets/images/buttons/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.facebook.com/Amidu.Shamika/"><img src="./assets/images/buttons/facebook.png" alt="facebook"></a>
-                <a href="https://twitter.com"><img src="./assets/images/buttons/twitter.png" alt="twitter"></a>
+                <a href="https://wa.me/+94785255251/">
+                    <img src="./assets/images/buttons/whatsapp.png" alt="whatsapp">
+                </a>
+                <a href="https://github.com/Amidu99">
+                    <img src="./assets/images/buttons/github.png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/amidu-shamika-9b755927b/">
+                    <img src="./assets/images/buttons/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://www.facebook.com/Amidu.Shamika/">
+                    <img src="./assets/images/buttons/facebook.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./assets/images/buttons/twitter.png" alt="twitter">
+                </a>
             </div>
         </section>
         </div>
@@ -370,6 +427,7 @@
 </footer>
 <script src="./assets/assignments/fontawesome/js/all.min.js"></script>
 <script src="./assets/styles/js/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./assets/styles/js/script.js"></script>
 </body>
 </html>

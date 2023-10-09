@@ -1,0 +1,27 @@
+#preloader{
+    background-color: #F1E807;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+}
+#preloader>img:nth-child(1){
+    position: absolute;
+    width: 300px;
+    aspect-ratio: 55/40;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#preloader>img:nth-child(2){
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 4/1;
+    left: 0;
+    right: 0;
+    top: 245px;
+    bottom: 0;
+    margin: auto;
+}

@@ -1,9 +1,95 @@
+AOS.init();
+document.addEventListener("DOMContentLoaded", ()=>{
+    console.log("Start redirecting...");
+});
+window.onload = () =>{
+    console.log("Loading...");
+    setInterval(close_loader,3000);
+}
+function close_loader() {
+    $("#preloader").css({"display": "none"});
+}
+// $(window).ready(() => {
+//     console.log("Done.");
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Load the images after the page has loaded
+    const image = new Image();
+    image.src = "./assets/images/preloader.gif";
+    image.onload = () => {
+        document.getElementById("preloader-image1").appendChild(image);
+    };
+
+    const text = new Image();
+    text.src = "./assets/images/preloader_text.svg";
+    text.onload = () => {
+        document.getElementById("preloader-image2").appendChild(text);
+        // Now that the images are loaded, you can close the preloader
+        close_loader();
+    };
+});
+
+
+
 const toggleBtn = document.querySelector('.toggle_btn');
 const dropdownMenu = document.querySelector('.dropdown_menu');
 toggleBtn.onclick = function (){
     dropdownMenu.classList.toggle('open');
     toggleBtn.classList.toggle('open');
 }
+let btn_changed = false;
+$('#color_changer').on('click', ()=> {
+    if(!btn_changed){
+        $("#color_btn_set").css({"display": "flex"});
+        $("#color_changer_icon").css({"transform": "rotate(180deg)"});
+        btn_changed = true;
+    }else if(btn_changed){
+        $("#color_btn_set").css({"display": "none"});
+        $("#color_changer_icon").css({"transform": "rotate(360deg)"});
+        btn_changed = false;
+    }
+});
+var stylesheetsToRemove = [
+    './assets/styles/css/theme_red.css',
+    './assets/styles/css/theme_blue.css',
+    './assets/styles/css/theme_green.css'
+];
+function removeStylesheets(stylesheetsToRemove) {
+    stylesheetsToRemove.forEach(function(stylesheet) {
+        var stylesheetToRemove = $('link[href="' + stylesheet + '"]');
+        if (stylesheetToRemove.length > 0) {
+            stylesheetToRemove.remove();
+        }
+    });
+}
+$('#color_btn_set .color_btn').eq(0).on('click', ()=> {
+    removeStylesheets(stylesheetsToRemove);
+    $('head').append('<link rel="stylesheet" type="text/css" href="./assets/styles/css/theme_red.css">');
+    $('#home > figure > img').attr('src', './assets/images/myImg_r.png');
+    $('#about > article > figure > img').attr('src', './assets/images/myImg2_r.png');
+    $('footer > a > img').attr('src', './assets/images/buttons/up_r.png');
+    $('#color_changer_icon').attr('src', './assets/images/buttons/up_r.png');
+});
+$('#color_btn_set .color_btn').eq(1).on('click', ()=> {
+    removeStylesheets(stylesheetsToRemove);
+    $('head').append('<link rel="stylesheet" type="text/css" href="./assets/styles/css/theme_green.css">');
+    $('#home > figure > img').attr('src', './assets/images/myImg_g.png');
+    $('#about > article > figure > img').attr('src', './assets/images/myImg2_g.png');
+    $('footer > a > img').attr('src', './assets/images/buttons/up_g.png');
+    $('#color_changer_icon').attr('src', './assets/images/buttons/up_g.png');
+});
+$('#color_btn_set .color_btn').eq(2).on('click', ()=> {
+    removeStylesheets(stylesheetsToRemove);
+    $('head').append('<link rel="stylesheet" type="text/css" href="./assets/styles/css/theme_blue.css">');
+    $('#home > figure > img').attr('src', './assets/images/myImg_b.png');
+    $('#about > article > figure > img').attr('src', './assets/images/myImg2_b.png');
+    $('footer > a > img').attr('src', './assets/images/buttons/up_b.png');
+    $('#color_changer_icon').attr('src', './assets/images/buttons/up_b.png');
+});
+$('#color_btn_set .color_btn').eq(3).on('click', () => {
+    location.reload();
+});
 const texts = ["Full-stack Developer", "Web Developer", "UI/UX Designer"];
 let textIndex = 0;
 let index = 0;

@@ -9,11 +9,9 @@ body{
 *::-webkit-scrollbar {
     width: 10px;
 }
-
 *::-webkit-scrollbar-track {
     background: #1E1E1E;
 }
-
 *::-webkit-scrollbar-thumb {
     background: #DFFF00;
     border-radius: 5px;
@@ -24,7 +22,7 @@ body{
 header{
     position: sticky;
     height: 60px;
-    z-index: 3;
+    z-index: 999;
     top: 0;
     background: #353935;
     box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0) 0 3px 6px;
@@ -104,9 +102,11 @@ header>nav>a:hover{
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    z-index: 999;
 }
 .dropdown_menu.open{
     height: 200px;
+    z-index: 999;
 }
 .dropdown_menu a{
     padding: 0.7rem;
@@ -114,6 +114,7 @@ header>nav>a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
 /*Header Responsive Design */
@@ -268,6 +269,59 @@ header>nav>a:hover{
     height: calc(45vw + 60px);
     aspect-ratio: calc(518 / 750);
 }
+#color_changer{
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: fixed;
+    left: 1vw;
+    top: 65px;
+    z-index: 900;
+}
+#color_changer_icon{
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: fixed;
+    rotate: 90deg;
+    z-index: 900;
+}
+#color_btn_set{
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    left: calc(1vw + 32px);
+    top: 65px;
+    z-index: 900;
+}
+.color_btn{
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin: 1px;
+    border-radius: 100%;
+    z-index: 900;
+}
+.color_btn:nth-child(1){
+    background-color: #F72F35;
+    border: 2px solid #a80505;
+    box-sizing: border-box;
+}
+.color_btn:nth-child(2){
+    background-color: #5DE23C;
+    border: 2px solid #08a204;
+    box-sizing: border-box;
+}
+.color_btn:nth-child(3){
+    background-color: #30C5FF;
+    border: 2px solid #0274a1;
+    box-sizing: border-box;
+}
+.color_btn:nth-child(4){
+    background-color: #FBF719;
+    border: 2px solid #a8a502;
+    box-sizing: border-box;
+}
 
 /*Home Responsive Design */
 @media all and (max-width: 768px){
@@ -319,6 +373,50 @@ header>nav>a:hover{
         text-align: center;
         justify-content: center;
     }
+    #color_changer{
+        width: 25px;
+        top: 55px;
+    }
+    #color_changer_icon{
+        width: 25px;
+    }
+    #color_btn_set{
+        left: calc(1vw + 27px);
+        top: 55px;
+    }
+    .color_btn{
+        width: 25px;
+    }
+}
+@media all and (max-width: 668px){
+    #home{
+        height: 95vw;
+    }
+    #homesec2{
+        top: 62.5vw;
+    }
+}
+@media all and (max-width: 600px){
+    #homesec1{
+        top: 10vw;
+    }
+    #homesec2{
+        top: 64vw;
+    }
+    #homesec2>div{
+        top: 1vw;
+    }
+}
+@media all and (max-width: 500px){
+    #home{
+        height: 100vw;
+    }
+    #homesec2{
+        top: 67.5vw;
+    }
+    #homesec2>div{
+        top: 1.25vw;
+    }
 }
 @media all and (max-width: 425px){
     #home{
@@ -362,6 +460,20 @@ header>nav>a:hover{
     #homesec2>div>button>a{
         font-size: 2.25vw;
     }
+    #color_changer{
+        width: 22px;
+        top: 44px;
+    }
+    #color_changer_icon{
+        width: 22px;
+    }
+    #color_btn_set{
+        left: calc(1vw + 24px);
+        top: 44px;
+    }
+    .color_btn{
+        width: 22px;
+    }
 }
 @media all and (max-width: 375px){
     #homesec2{
@@ -390,6 +502,18 @@ header>nav>a:hover{
     }
     #home>figure{
         top: -20vw;
+    }
+    #color_changer{
+        width: 18px;
+    }
+    #color_changer_icon{
+        width: 18px;
+    }
+    #color_btn_set{
+        left: calc(1vw + 20px);
+    }
+    .color_btn{
+        width: 18px;
     }
 }
 
@@ -576,6 +700,30 @@ header>nav>a:hover{
         margin: auto;
     }
 }
+@media all and (max-width: 668px){
+    #about{
+        height: 200vw;
+    }
+    #intro>div{
+        height: 16.5vw;
+    }
+}
+@media all and (max-width: 600px){
+    #about{
+        height: 206vw;
+    }
+    #intro>div{
+        height: 19vw;
+    }
+}
+@media all and (max-width: 500px){
+    #about{
+        height: 215vw;
+    }
+    #intro>div{
+        height: 21vw;
+    }
+}
 @media all and (max-width: 425px){
     #about{
         height: 305vw;
@@ -755,6 +903,21 @@ header>nav>a:hover{
     }
     .dot{
         width: 1.25vw;
+    }
+}
+@media all and (max-width: 668px) {
+    #intro2{
+        top: 54vw;
+    }
+}
+@media all and (max-width: 600px) {
+    #intro2{
+        top: 56vw;
+    }
+}
+@media all and (max-width: 500px) {
+    #intro2{
+        top: 58vw;
     }
 }
 @media all and (max-width: 425px) {
@@ -1191,6 +1354,20 @@ header>nav>a:hover{
         height: 7px;
     }
 }
+@media all and (max-width: 668px) {
+    #skills {
+        top: 58vw;
+    }
+}
+@media all and (max-width: 600px) {
+    #skills {
+        top: 60vw;
+    }
+}@media all and (max-width: 500px) {
+    #skills {
+        top: 62vw;
+    }
+}
 @media all and (max-width: 425px) {
     #skills{
         top: 92vw;
@@ -1439,6 +1616,30 @@ header>nav>a:hover{
         height: calc((53vw - 60px) / 4);
     }
 }
+@media all and (max-width: 668px){
+    #assignments{
+        height: 72vw;
+    }
+    #assignments>section{
+        height: 67vw;
+    }
+}
+@media all and (max-width: 600px){
+    #assignments{
+        height: 75vw;
+    }
+    #assignments>section{
+        height: 70vw;
+    }
+}
+@media all and (max-width: 500px){
+    #assignments{
+        height: 80vw;
+    }
+    #assignments>section{
+        height: 75vw;
+    }
+}
 @media all and (max-width: 425px){
     #assignments{
         height: 140vw;
@@ -1668,6 +1869,10 @@ header>nav>a:hover{
     0 0 5px #F1E807,
     0 0 10px #F1E807;
     background: #fff;
+}
+.card .content .media-icons span svg{
+    padding-right: 5px;
+    color: #F1E807;
 }
 .button{
     display: flex;
@@ -1964,7 +2169,6 @@ input[type="radio"]{
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-10px);
     }
@@ -2088,6 +2292,21 @@ input[type="radio"]{
     }
     #contact>section>div>section>div>a>img{
         width: 35px;
+    }
+}
+@media all and (max-width: 668px) {
+    #contact{
+        height: 84vw;
+    }
+}
+@media all and (max-width: 600px) {
+    #contact{
+        height: 88vw;
+    }
+}
+@media all and (max-width: 500px) {
+    #contact{
+        height: 95vw;
     }
 }
 @media all and (max-width: 425px) {

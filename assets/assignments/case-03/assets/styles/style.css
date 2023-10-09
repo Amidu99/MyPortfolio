@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 body{
     margin: 0;
+    height: 100vh;
 }
 #frame{
     width: 200px;
     aspect-ratio: 1/1;
     border: 12px solid #b49085;
     border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
     position: fixed;
     left: 0;
     right: 0;
@@ -21,6 +24,8 @@ body{
     aspect-ratio: 1/1;
     border: 12px solid #f90004;
     border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
     position: absolute;
     left: 0;
     right: 0;
@@ -40,6 +45,8 @@ section>div{
     width: 180px;
     aspect-ratio: 1/1;
     border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
     margin: calc(50vh - 90px) 0;
 }
 section>div:nth-child(1){
