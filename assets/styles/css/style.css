@@ -2173,19 +2173,15 @@ input[type="radio"]{
         transform: translateY(-10px);
     }
 }
-
 #contact>section>div>section>div>a:nth-child(2)>img {
     animation-delay: .2s;
 }
-
 #contact>section>div>section>div>a:nth-child(3)>img {
     animation-delay: .4s;
 }
-
 #contact>section>div>section>div>a:nth-child(4)>img {
     animation-delay: .6s;
 }
-
 #contact>section>div>section>div>a:nth-child(5)>img {
     animation-delay: .8s;
 }
@@ -2443,6 +2439,7 @@ footer>a>img{
 #fix-icon:hover{
     opacity: 100%;
 }
+
 /*Footer Responsive Design */
 @media all and (max-width: 768px) {
     footer>p{

@@ -9,29 +9,9 @@ window.onload = () =>{
 function close_loader() {
     $("#preloader").css({"display": "none"});
 }
-// $(window).ready(() => {
-//     console.log("Done.");
-// });
-
-document.addEventListener("DOMContentLoaded", () => {
-    // Load the images after the page has loaded
-    const image = new Image();
-    image.src = "./assets/images/preloader.gif";
-    image.onload = () => {
-        document.getElementById("preloader-image1").appendChild(image);
-    };
-
-    const text = new Image();
-    text.src = "./assets/images/preloader_text.svg";
-    text.onload = () => {
-        document.getElementById("preloader-image2").appendChild(text);
-        // Now that the images are loaded, you can close the preloader
-        close_loader();
-    };
+$(window).ready(() => {
+    console.log("Done.");
 });
-
-
-
 const toggleBtn = document.querySelector('.toggle_btn');
 const dropdownMenu = document.querySelector('.dropdown_menu');
 toggleBtn.onclick = function (){
