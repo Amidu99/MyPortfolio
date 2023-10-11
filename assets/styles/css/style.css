@@ -2127,6 +2127,7 @@ input[type="radio"]{
     height: 25px;
     color: #000000;
     font-weight: 200;
+    cursor: pointer;
 }
 #btn-send:hover{
     background: #000000;

@@ -126,3 +126,24 @@ $('#assignment11').on('click', ()=> {
 $('#assignment12').on('click', ()=> {
     window.open('./assets/assignments/case-12/case_12.html', '_blank');
 });
+function send_email(){
+    let client_name = $("#client-name").val();
+    let client_email = $("#client-email").val();
+    let client_message = $("#client-message").val();
+    let email_body = "Client Name : "+client_name+'<br/>Client Email : '+client_email+'<br/>Client Message : '+client_message;
+    Email.send({
+        SecureToken : "7046cbac-5347-4597-9b6d-61ef01c6df3e",
+        To : 'amidushamika@gmail.com',
+        From : "htcone9pw@gmail.com",
+        Subject : "New message from your website",
+        Body : email_body
+    }).then(
+        message => {
+            if(message=='OK'){
+                swal("Success!", "Your message has been sent successfully.", "success");
+            }else{
+                swal("Error!", "A problem has been occurred while submitting your data.", "error");
+            }
+        }
+    );
+}

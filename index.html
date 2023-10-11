@@ -386,10 +386,10 @@
             If you have any suggestion, project, or even you want to say Hello…
             please fill out the form below, and I will reply you shortly.</p>
         <div>
-            <form>
-                <input type="text" name="name" id="client-name" placeholder="YOUR NAME" data-aos="zoom-in-down">
-                <input type="email" name="email" id="client-email" placeholder="YOUR EMAIL" data-aos="zoom-in-down">
-                <textarea id="client-message" placeholder="YOUR MESSAGE" cols="46" rows="10" data-aos="zoom-in-down"></textarea>
+            <form onsubmit="send_email(); reset(); return false;">
+                <input type="text" name="name" id="client-name" placeholder="YOUR NAME" data-aos="zoom-in-down" required>
+                <input type="email" name="email" id="client-email" placeholder="YOUR EMAIL" data-aos="zoom-in-down" required>
+                <textarea id="client-message" placeholder="YOUR MESSAGE" cols="46" rows="10" data-aos="zoom-in-down" required></textarea>
                 <input id="btn-send" type="submit" value="Send Message">
             </form>
             <section id="contactopt" data-aos="zoom-in-down" data-aos-duration="2000">
@@ -428,6 +428,8 @@
 <script src="./assets/assignments/fontawesome/js/all.min.js"></script>
 <script src="./assets/styles/js/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./assets/styles/js/script.js"></script>
 </body>
 </html>
