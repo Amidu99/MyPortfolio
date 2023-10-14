@@ -278,6 +278,11 @@ header>nav>a:hover{
     left: 1vw;
     top: 65px;
     z-index: 900;
+    animation: beat 1500ms infinite;
+}
+@keyframes beat {
+    0% { scale: 0.75; transform: translateX(-4px); }
+    100% { scale: 1.05; transform: translateX(4px); }
 }
 #color_changer_icon{
     width: 30px;

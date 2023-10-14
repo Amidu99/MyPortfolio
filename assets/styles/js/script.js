@@ -140,9 +140,9 @@ function send_email(){
     }).then(
         message => {
             if(message=='OK'){
-                swal("Success!", "Your message has been sent successfully.", "success");
+                Swal.fire({width: '240px', position: 'center', icon: 'success', title: 'Message sent', showConfirmButton: false, timer: 2500});
             }else{
-                swal("Error!", "A problem has been occurred while submitting your data.", "error");
+                Swal.fire({width: '240px', position: 'center', icon: 'error', title: 'Message not sent', showConfirmButton: false, timer: 2000});
             }
         }
     );
