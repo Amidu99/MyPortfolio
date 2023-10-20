@@ -1769,7 +1769,7 @@ header>nav>a:hover{
     padding: 80px 0;
 }
 .container .main-card{
-    width: 300%;
+    width: 400%;
     display: flex;
     justify-content: space-evenly;
     transition: all 1s ease;
@@ -1779,6 +1779,9 @@ header>nav>a:hover{
 }
 #three:checked ~ .main-card{
     margin-left: -200%;
+}
+#four:checked ~ .main-card{
+    margin-left: -300%;
 }
 .main-card .cards{
     width: calc(100% / 2 - 30px);
@@ -1915,6 +1918,22 @@ header>nav>a:hover{
     0 0 3px #F1E807,
     0 0 3px #F1E807,
     0 0 8px #F1E807;
+}
+#four:checked ~ .button label.four{
+    width: 35px;
+    box-shadow: 0 0 3px #F1E807,
+    0 0 3px #F1E807,
+    0 0 3px #F1E807,
+    0 0 8px #F1E807;
+}
+#four:checked ~ .button label.three{
+    width: 15px;
+}
+#four:checked ~ .button label.two{
+    width: 15px;
+}
+#four:checked ~ .button label.one{
+    width: 15px;
 }
 #three:checked ~ .button label.two{
     width: 15px;
@@ -2444,6 +2463,11 @@ footer>a>img{
 }
 #fix-icon:hover{
     opacity: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #F1E807,
+    0 0 4px #F1E807,
+    0 0 6px #F1E807,
+    0 0 8px #F1E807;
 }
 
 /*Footer Responsive Design */

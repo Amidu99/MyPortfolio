@@ -203,6 +203,12 @@ header>nav>a:hover{
     0 0 3px #47f81f,
     0 0 8px #47f81f;
 }
+#four:checked ~ .button label.four{
+    box-shadow: 0 0 3px #5DE23C,
+    0 0 3px #47f81f,
+    0 0 3px #47f81f,
+    0 0 8px #47f81f;
+}
 
 /*Contact Styles*/
 #contact>section>h3>span{
@@ -245,4 +251,12 @@ header>nav>a:hover{
     0 0 3px #47f81f,
     0 0 3px #47f81f,
     0 0 6px #47f81f;
+}
+
+/*Footer Styles*/
+#fix-icon:hover{
+    box-shadow: 0 0 2px #5DE23C,
+    0 0 4px #47f81f,
+    0 0 6px #47f81f,
+    0 0 8px #47f81f;
 }
