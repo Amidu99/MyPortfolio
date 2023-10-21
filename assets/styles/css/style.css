@@ -132,7 +132,7 @@ header>nav>a:hover{
         display: block;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     header {
         height: 40px;
     }
@@ -423,7 +423,7 @@ header>nav>a:hover{
         top: 1.25vw;
     }
 }
-@media all and (max-width: 425px){
+@media all and (max-width: 430px){
     #home{
         height: 170vw;
     }
@@ -729,7 +729,7 @@ header>nav>a:hover{
         height: 21vw;
     }
 }
-@media all and (max-width: 425px){
+@media all and (max-width: 430px){
     #about{
         height: 305vw;
         padding-top: 12vw;
@@ -925,7 +925,7 @@ header>nav>a:hover{
         top: 58vw;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     #intro2{
         top: 90vw;
     }
@@ -1035,7 +1035,7 @@ header>nav>a:hover{
         top: 23vw;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     #education div:nth-child(3) {
         top: 7vw;
     }
@@ -1135,7 +1135,7 @@ header>nav>a:hover{
         top: 24.3vw;
     }
 }
-@media all and (max-width: 425px){
+@media all and (max-width: 430px){
     #experiences div:nth-child(3) {
         top: 8vw;
     }
@@ -1373,7 +1373,7 @@ header>nav>a:hover{
         top: 62vw;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     #skills{
         top: 92vw;
         height: 350px;
@@ -1645,7 +1645,7 @@ header>nav>a:hover{
         height: 75vw;
     }
 }
-@media all and (max-width: 425px){
+@media all and (max-width: 430px){
     #assignments{
         height: 140vw;
     }
@@ -1980,7 +1980,7 @@ input[type="radio"]{
         width: 100%;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     #projects>h3{
         font-size: 3.5vw;
     }
@@ -2330,7 +2330,7 @@ input[type="radio"]{
         height: 95vw;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     #contact{
         height: 150vw;
     }
@@ -2480,7 +2480,7 @@ footer>a>img{
         width: 38px;
     }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
     footer>p{
         font-size: 2vw;
         letter-spacing: 0.2vw;
