@@ -182,6 +182,12 @@ header>nav>a:hover{
 .card .content .media-icons span svg{
     color: #5DE23C;
 }
+.card .content #playGame{
+    color: #5DE23C;
+}
+.card .content #playGame>a>svg{
+    color: #5DE23C;
+}
 .button label{
     background: #5DE23C;
 }
