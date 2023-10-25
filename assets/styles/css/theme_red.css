@@ -28,6 +28,20 @@ header>nav>a:hover{
 #homesec1>h1>span{
     color: #F72F35;
 }
+#homesec1>h2{
+    background: linear-gradient(to right, #FFFFFF 20%, #F72F35 40%, #F72F35 60%, #FFFFFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1500ms linear infinite;
+}
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
 #homesec2>div>button{
     background: #F72F35;
     border: 2px solid #F72F35;
@@ -187,6 +201,13 @@ header>nav>a:hover{
 }
 .card .content #playGame>a>svg{
     color: #F72F35;
+    border: 2px solid #F72F35;
+}
+.card .content #playGame>a>svg:hover{
+    box-shadow: 0 0 5px #F72F35,
+    0 0 5px #E4181E,
+    0 0 5px #E4181E,
+    0 0 10px #E4181E;
 }
 .button label{
     background: #F72F35;
