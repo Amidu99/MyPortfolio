@@ -54,3 +54,30 @@ section>div>h3>svg {
     position: absolute;
     margin-left: 55px;
 }
+#gitLink{
+    font-family: 'Lilita One', cursive;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 50px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #FFFFFF;
+}
+#gitLink>a{
+    display: inline-block;
+    width: 2vw;
+    aspect-ratio: 1/1;
+}
+#gitLink>a>svg{
+    width: 2vw;
+    aspect-ratio: 1/1;
+}
+#gitLink>a>svg:hover{
+    scale: 1.25;
+}

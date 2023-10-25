@@ -68,6 +68,26 @@ main>section>div>div{
 main>section>div>div>img{
     width: 100%;
 }
+#gitLink{
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-left: 8px;
+}
+#gitLink>a{
+    display: inline-block;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+#gitLink>a>svg{
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+#gitLink>a>svg:hover{
+    scale: 1.4;
+}
 footer{
     position: relative;
     height: 40px;
