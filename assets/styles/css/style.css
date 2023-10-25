@@ -203,6 +203,20 @@ header>nav>a:hover{
 #homesec1>h1>span{
     color: #FFEA00;
 }
+#homesec1>h2{
+    background: linear-gradient(to right, #FFFFFF 20%, #FFEA00 40%, #FFEA00 60%, #FFFFFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1500ms linear infinite;
+}
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
 #homesec2>p{
     position: relative;
     padding-top: 2vw;
@@ -1881,6 +1895,25 @@ header>nav>a:hover{
 .card .content .media-icons span svg{
     padding-right: 5px;
     color: #F1E807;
+}
+.card .content #playGame{
+    font-weight: bold;
+    color: #F1E807;
+}
+.card .content #playGame>a>svg{
+    color: #F1E807;
+    padding: 3px;
+    border: 2px solid #F1E807;
+    border-radius: 100%;
+    box-sizing: content-box;
+}
+.card .content #playGame>a>svg:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px #F1E807,
+    0 0 5px #F1E807,
+    0 0 5px #F1E807,
+    0 0 10px #F1E807;
 }
 .button{
     display: flex;
