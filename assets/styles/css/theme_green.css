@@ -196,14 +196,17 @@ header>nav>a:hover{
 .card .content .media-icons span svg{
     color: #5DE23C;
 }
-.card .content #playGame{
+.card .content #playGame,
+.card .content #takeLook{
     color: #5DE23C;
 }
-.card .content #playGame>a>svg{
+.card .content #playGame>a>svg,
+.card .content #takeLook>a>svg{
     color: #5DE23C;
     border: 2px solid #5DE23C;
 }
-.card .content #playGame>a>svg:hover{
+.card .content #playGame>a>svg:hover,
+.card .content #takeLook>a>svg:hover{
     box-shadow: 0 0 5px #5DE23C,
     0 0 5px #47f81f,
     0 0 5px #47f81f,
