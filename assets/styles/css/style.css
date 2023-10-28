@@ -1896,18 +1896,21 @@ header>nav>a:hover{
     padding-right: 5px;
     color: #F1E807;
 }
-.card .content #playGame{
+.card .content #playGame,
+.card .content #takeLook{
     font-weight: bold;
     color: #F1E807;
 }
-.card .content #playGame>a>svg{
+.card .content #playGame>a>svg,
+.card .content #takeLook>a>svg{
     color: #F1E807;
     padding: 3px;
     border: 2px solid #F1E807;
     border-radius: 100%;
     box-sizing: content-box;
 }
-.card .content #playGame>a>svg:hover{
+.card .content #playGame>a>svg:hover,
+.card .content #takeLook>a>svg:hover{
     color: #fff;
     border: 2px solid #fff;
     box-shadow: 0 0 5px #F1E807,
