@@ -1784,6 +1784,7 @@ header>nav>a:hover{
 }
 .container .main-card{
     width: 400%;
+    cursor: grab;
     display: flex;
     justify-content: space-evenly;
     transition: all 1s ease;
@@ -1924,6 +1925,7 @@ header>nav>a:hover{
     justify-content: center;
 }
 .button label{
+    cursor: pointer;
     height: 15px;
     width: 15px;
     background: #F1E807;

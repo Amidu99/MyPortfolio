@@ -126,6 +126,68 @@ $('#assignment11').on('click', ()=> {
 $('#assignment12').on('click', ()=> {
     window.open('./assets/assignments/case-12/case_12.html', '_blank');
 });
+const mainCard = document.querySelector('.main-card');
+let activeDot = 0;
+mainCard.addEventListener('mousedown', handleMouseDown, false);
+mainCard.addEventListener('mousemove', handleMouseMove, false);
+mainCard.addEventListener('mouseup', handleMouseUp, false);
+mainCard.addEventListener('touchstart', handleTouchStart, false);
+mainCard.addEventListener('touchmove', handleTouchMove, false);
+let xDown = null;
+function handleMouseDown(event) {
+    xDown = event.clientX;
+}
+function handleMouseMove(event) {
+    if (!xDown) {
+        return;
+    }
+    const xUp = event.clientX;
+    const xDiff = xDown - xUp;
+    if (xDiff > 0) {
+        if (activeDot < 3) {
+            activeDot++;
+            updateCheckedRadio(activeDot);
+        }
+    } else {
+        if (activeDot > 0) {
+            activeDot--;
+            updateCheckedRadio(activeDot);
+        }
+    }
+    xDown = null;
+}
+function handleMouseUp() {
+    xDown = null;
+}
+function handleTouchStart(event) {
+    const firstTouch = event.touches[0];
+    xDown = firstTouch.clientX;
+}
+function handleTouchMove(event) {
+    if (!xDown) {
+        return;
+    }
+    const xUp = event.touches[0].clientX;
+    const xDiff = xDown - xUp;
+    if (xDiff > 0) {
+        if (activeDot < 3) {
+            activeDot++;
+            updateCheckedRadio(activeDot);
+        }
+    } else {
+        if (activeDot > 0) {
+            activeDot--;
+            updateCheckedRadio(activeDot);
+        }
+    }
+    xDown = null;
+}
+function updateCheckedRadio(index) {
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach((radio, i) => {
+        radio.checked = i === index;
+    });
+}
 function send_email(){
     let client_name = $("#client-name").val();
     let client_email = $("#client-email").val();
