@@ -2078,6 +2078,9 @@ input[type="radio"]{
     #MyWorkfolio{
         font-size: 2.5vw;
     }
+    #MyWorkfolioBTN{
+        font-size: 3.75vw;
+    }
 }
 @media all and (max-width: 375px) {
     .main-card .cards .card{
@@ -2097,6 +2100,9 @@ input[type="radio"]{
     }
     #MyWorkfolio{
         font-size: 2.7vw;
+    }
+    #MyWorkfolioBTN{
+        font-size: 4.25vw;
     }
 }
 @media all and (max-width: 320px) {
