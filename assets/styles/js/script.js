@@ -144,7 +144,7 @@ function handleMouseMove(event) {
     const xUp = event.clientX;
     const xDiff = xDown - xUp;
     if (xDiff > 0) {
-        if (activeDot < 3) {
+        if (activeDot < 4) {
             activeDot++;
             updateCheckedRadio(activeDot);
         }
@@ -170,7 +170,7 @@ function handleTouchMove(event) {
     const xUp = event.touches[0].clientX;
     const xDiff = xDown - xUp;
     if (xDiff > 0) {
-        if (activeDot < 3) {
+        if (activeDot < 4) {
             activeDot++;
             updateCheckedRadio(activeDot);
         }
