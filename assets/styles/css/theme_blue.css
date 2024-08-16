@@ -239,6 +239,9 @@ header>nav>a:hover{
     0 0 3px #0048ff,
     0 0 8px #0048ff;
 }
+#MyWorkfolioBTN{
+    color: #30C5FF;
+}
 
 /*Contact Styles*/
 #contact>section>h3>span{

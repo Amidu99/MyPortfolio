@@ -209,3 +209,7 @@ function send_email(){
         }
     );
 }
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});

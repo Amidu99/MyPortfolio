@@ -1783,7 +1783,7 @@ header>nav>a:hover{
     padding: 80px 0;
 }
 .container .main-card{
-    width: 400%;
+    width: 500%;
     cursor: grab;
     display: flex;
     justify-content: space-evenly;
@@ -1797,6 +1797,9 @@ header>nav>a:hover{
 }
 #four:checked ~ .main-card{
     margin-left: -300%;
+}
+#five:checked ~ .main-card{
+    margin-left: -400%;
 }
 .main-card .cards{
     width: calc(100% / 2 - 30px);
@@ -1964,6 +1967,25 @@ header>nav>a:hover{
     0 0 3px #F1E807,
     0 0 8px #F1E807;
 }
+#five:checked ~ .button label.five{
+    width: 35px;
+    box-shadow: 0 0 3px #F1E807,
+    0 0 3px #F1E807,
+    0 0 3px #F1E807,
+    0 0 8px #F1E807;
+}
+#five:checked ~ .button label.four{
+    width: 15px;
+}
+#five:checked ~ .button label.three{
+    width: 15px;
+}
+#five:checked ~ .button label.two{
+    width: 15px;
+}
+#five:checked ~ .button label.one{
+    width: 15px;
+}
 #four:checked ~ .button label.three{
     width: 15px;
 }
@@ -1987,6 +2009,22 @@ header>nav>a:hover{
 }
 input[type="radio"]{
     display: none;
+}
+#MyWorkfolio{
+    position: relative;
+    width: fit-content;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+    font-size: 2vw;
+    padding-top: 10px;
+}
+#MyWorkfolioBTN{
+    color: #F1E807;
+    font-size: 3vw;
 }
 
 /*Projects Responsive Design */
