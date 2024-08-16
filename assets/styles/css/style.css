@@ -2080,10 +2080,10 @@ input[type="radio"]{
         font-size: 12px;
     }
     #MyWorkfolio{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     #MyWorkfolioBTN{
-        font-size: 4.75vw;
+        font-size: 24px;
     }
 }
 @media all and (max-width: 375px) {
@@ -2103,10 +2103,10 @@ input[type="radio"]{
         font-size: 11px;
     }
     #MyWorkfolio{
-        font-size: 2.7vw;
+        font-size: 3.25vw;
     }
     #MyWorkfolioBTN{
-        font-size: 5.25vw;
+        font-size: 24px;
     }
 }
 @media all and (max-width: 320px) {
